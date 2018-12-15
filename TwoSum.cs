@@ -1,6 +1,6 @@
 public class Solution {
     public int[] TwoSum(int[] nums, int target) {
-		//solution for TwoSum --LeetCode solution
+		//solution for TwoSum --LeetCode solution after change
       
 		int a=0;
         int b=0;
