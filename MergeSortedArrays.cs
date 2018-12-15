@@ -1,5 +1,5 @@
 public class Solution {
-	//SOlution to LeetCode problem
+	//SOlution to LeetCode problem. Swathi is great.
     public void MergeSortedArrays(int[] nums1, int m, int[] nums2, int n) {       
 		
 	    for(int i=nums1.Length-1;i>=0;i--)
