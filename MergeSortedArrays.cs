@@ -1,12 +1,10 @@
 public class Solution {
-    public void Merge(int[] nums1, int m, int[] nums2, int n) {
-        
-      
-		for(int i=nums1.Length-1;i>=0;i--)
-		{
-            
-            if(m>0 && n>0)
-            {
+    public void MergeSortedArrays(int[] nums1, int m, int[] nums2, int n) {       
+		
+	    for(int i=nums1.Length-1;i>=0;i--)
+	    {
+		    if(m>0 && n>0)
+		    {
 			if(nums1[m-1]<nums2[n-1])
 			{
             
