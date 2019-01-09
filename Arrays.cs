@@ -1,4 +1,4 @@
-//This solution uses Arrays concept
+//This solution uses Arrays concept--Difference between Arrays and Hashtable
 using System;
 using System.Collections.Generic;
 
