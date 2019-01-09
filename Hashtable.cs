@@ -1,3 +1,5 @@
+//This solution uses HashTable concept
+
 using System;
 using System.Collections;
 

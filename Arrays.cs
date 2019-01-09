@@ -1,3 +1,4 @@
+//This solution uses Arrays concept
 using System;
 using System.Collections.Generic;
 
