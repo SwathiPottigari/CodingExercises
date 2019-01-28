@@ -1,54 +1,69 @@
 // JavaScript source code
-alert("script called");
 var storage = 0;
+var display = "";
+var resultelement;
+
+function initializeGloabls() {
+    resultelement = document.getElementById("result");
+    //alert(resultelement);
+}
 function addNumbers() {
     var a = parseInt(document.getElementById("number").value);
     var b = 0;
-    if (document.getElementById("result").value === "") {
-        //alert("Please clear the value before you perform another operation");
+    document.getElementById("number").value = "";
+    if (resultelement.innerText === "") {      
         storage = a;
-        document.getElementById("result").value = storage;
+        display = storage;
+        resultelement.innerHTML = display;
+            
     }
     else {
         b = storage;
+        display = display +"+"+ a;
         storage = storage + a;
+        resultelement.innerHTML = display + "</br>" +"<b>" + storage +"</b>";
     }
-    document.getElementById("result").value = b + " + " + a + "=" + storage;
+    
 }
 
 function mulNumbers() {
     var a = parseInt(document.getElementById("number").value);
     var b = 0;
-    if (document.getElementById("result").value === "") {
-        storage = a * b;
-        //alert("Please clear the value before you perform another operation");
+    document.getElementById("number").value = "";
+    if (resultelement.innerText === "") {
+        storage = a;
+        display = storage;
+        resultelement.innerHTML = display;
     }
     else {
         b = storage;
+        display = display + "*" + a;
         storage = storage * a;
+        resultelement.innerHTML = display + "</br>" + "<b>" + storage + "</b>";
     }
-    document.getElementById("result").value = b + " * " + a + "=" + storage;
+   
 }
 
 function divideNumbers() {
     var a = parseInt(document.getElementById("number").value);
     var b = 0;
-    if (document.getElementById("result").value === "") {
-        //alert("Please clear the value before you perform another operation");
-        storage =;
+    document.getElementById("number").value = "";
+    
+    if (resultelement.innerText === "") {
+        storage = a;
+        display = storage;
+        resultelement.innerHTML = display;
     }
-    else {
-
-        document.getElementById("result").value = a + " / " + b + "=" + c;
+    else {        
+        b = storage;        
+        display = display + "/" + a;        
+        storage = storage / a;        
+        resultelement.innerHTML = display + "</br>" + "<b>" + storage + "</b>";
     }
 }
 function clearText() {
-    if (document.getElementById("result").value === "") {
-        alert("There is nothing to be cleared");
-    }
-    else {
-        document.getElementById("firstNumber").value = "";
-        document.getElementById("secondNumber").value = "";
-        document.getElementById("result").value = "";
-    }
+        
+        document.getElementById("number").value = "";
+        resultelement.value = "";
+    
 }
