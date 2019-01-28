@@ -1,83 +1,36 @@
 <!DOCTYPE >
 <html>
-<head></head>
-<title>Calculator Application</title>
-<script>
-function addNumbers(){
-if(document.getElementById("result").value!=="")
-{
-alert("Please clear the value before you perform another operation");
-}
-else
-{
-var a=parseInt(document.getElementById("firstNumber").value);
-var b=parseInt(document.getElementById("secondNumber").value);
-var c= a+b;
-document.getElementById("result").value=a+" + "+ b+"="+c;
-}
-}
-function mulNumbers(){
-if(document.getElementById("result").value!=="")
-{
-alert("Please clear the value before you perform another operation");
-}
-else
-{
-var a=parseInt(document.getElementById("firstNumber").value);
-var b=parseInt(document.getElementById("secondNumber").value);
-var c= a*b;
-document.getElementById("result").value=a+" * "+ b+"="+c;
-}
-}
+<head>
+    <title>Calculator Application</title>
+    
+</head>
 
-function divideNumbers(){
-if(document.getElementById("result").value!=="")
-{
-alert("Please clear the value before you perform another operation");
-}
-else
-{
-var a=parseInt(document.getElementById("firstNumber").value);
-var b=parseInt(document.getElementById("secondNumber").value);
-var c= a/b;
-document.getElementById("result").value=a+" / "+ b+"="+c;
-}
-}
-function clearText(){
-if(document.getElementById("result").value==="")
-{
-alert("There is nothing to be cleared");
-}
-else
-{
-document.getElementById("firstNumber").value="";
-document.getElementById("secondNumber").value="";
-document.getElementById("result").value="";
-}
-}
-</script>
-<div>
-<h1>Calculate</h1>
-<p>Please enter the numbers in the given boxes to see the result</p>
-</div>
-<div id="div1">
-<table>
-<tr>
-<th>First Number =</th>
-<td><input type="text" id="firstNumber" ></input></td>
-<th>Second Number =</th>
-<td><input type="text" id="secondNumber" ></input></td>
-</tr>
-<tr>
-<td><button id="add" onclick="addNumbers()">Add</button></td>
-<td><button id="multiply" onclick="mulNumbers()">Multiply</button></td>
-<td><button id="divide" onclick="divideNumbers()">Divide</button></td>
-<td><button id="clear" onclick="clearText()">Clear</button></td>
-</tr>
-<tr>
-<th>Result=</th>
-<td><input type="text" id="result" ></td>
-</tr>
-</table>
-</div>
+<body>
+    <script src="CalculatorApp.js"></script>
+    <div>
+        <h1>Calculate</h1>
+        <p>Please enter the numbers in the given boxes to see the result</p>
+    </div>
+    <div id="div1">
+        <table>
+            <tr>
+                <!--<th>First Number =</th>-->
+                <td><input type="text" id="number" /></td>
+                <!--<th>Second Number =</th>-->
+                <!--<td><input type="text" id="secondNumber" ></input></td>-->
+                <td><button id="multiply" onclick="mulNumbers()">Multiply</button></td>
+            </tr>
+            <tr>
+                <td><button id="add" onclick="addNumbers()">Add</button></td>
+                <td><button id="divide" onclick="divideNumbers()">Divide</button></td>
+                <td><button id="clear" onclick="clearText()">Clear</button></td>
+            </tr>
+            <tr>
+                <th>Result=</th>
+                <td><input type="text" id="result"></td>
+                <!--<td><p id="result"></p></td>-->
+            </tr>
+        </table>
+    </div>
+</body>
 </html>
