@@ -3,7 +3,7 @@ var storage = 0;
 var display = "";
 var resultelement;
 
-function initializeGloabls() {
+function initializeGlobals() {
     resultelement = document.getElementById("result");
     //alert(resultelement);
 }
@@ -26,7 +26,7 @@ function addNumbers() {
     
 }
 
-function mulNumbers() {
+function multiplyNumbers() {
     var a = parseInt(document.getElementById("number").value);
     var b = 0;
     document.getElementById("number").value = "";
