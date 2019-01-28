@@ -1,0 +1,37 @@
+<!DOCTYPE >
+<html>
+<head>
+    <title>Calculator Application</title>
+    <script src="CalculatorApp.js"></script>
+</head>
+
+<body onload="initializeGlobals()">
+
+    <div>
+        <h1>Calculate</h1>
+        <p>Please enter the numbers in the given boxes to see the result</p>
+    </div>
+    <div id="div1">
+        <table>
+            <tr>
+                <!--<th>First Number =</th>-->
+                <td><input type="text" id="number" /></td>
+                <!--<th>Second Number =</th>-->
+                <!--<td><input type="text" id="secondNumber" ></input></td>-->
+            </tr>
+            <tr>
+                <td><button id="add" onclick="addNumbers()">Add</button></td>
+                <td><button id="multiply" onclick="multiplyNumbers()">Multiply</button></td>
+                <td><button id="divide" onclick="divideNumbers()">Divide</button></td>
+                <td><button id="clear" onclick="clearText()">Clear</button></td>
+            </tr>
+            <tr>
+                <th>Result=</th>
+
+                <td><p id="result"></p></td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>
