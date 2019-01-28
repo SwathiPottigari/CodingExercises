@@ -64,6 +64,6 @@ function divideNumbers() {
 function clearText() {
         
         document.getElementById("number").value = "";
-        resultelement.value = "";
+        resultelement.innerHTML = "";
     
 }
